@@ -57,7 +57,7 @@ ENGINE = InnoDB;
 -- Table `meubd`.`Clientes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `meubd`.`Clientes` (
-  `cpf` VARCHAR(11) NOT NULL,
+  `cpf` BIGINT(11) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `RG` INT(15) NOT NULL,
   `UF` VARCHAR(2) NOT NULL,
