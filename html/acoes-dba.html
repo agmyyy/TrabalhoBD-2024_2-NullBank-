@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ações - DBA</title>
+  <meta name="description" content="Bicicletas elétricas de ótima qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade.">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,400;600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shrikhand&display=swap" rel="stylesheet">
+
+</head>
+
+<!-- Estrutura html da página de ações (inserir/deletar/atualizar) do DBA -->
+
+<body id="orcamento">
+  <header class="header-bg">
+    <div class="header container">
+      <!-- Cabeçalho -->
+      <h2 class="header-menu font-1-xxl cor-2">nullBANK</h2>
+      <nav aria-label="primaria">
+        <ul class="header-menu font-2-m cor-0">
+          <li><a href="./index.html">DBA</a> </li>
+          <li><a href="./funcionarios.html">Fucionários</a> </li>
+          <li><a href="./cliente.html">Cliente</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="titulo-bg">
+      <div class="titulo container">
+        <p class="font-2-l cor-5">conecte-se com seu banco de dados</p>
+        <h1 class="font-1-xxl  cor-0">página DBA<span class="cor-p1">.</span></h1>
+      </div>
+    </div>
+
+    <!-- Formulário de escolha de ação do DBA -->
+    <form class="orcamento container" action="./">
+      <div class="orcamento-produto">
+        <h2 class="font-1-m cor-2"> Escolha sua ação:</h2>
+        <input type="radio" name="tipo" value="inserir" id="inserir">
+        <label for="inserir">Inserir</label>
+        <input type="radio" name="tipo" value="deletar" id="deletar">
+        <label for="deletar">Deletar</label>
+        <input type="radio" name="tipo" value="atualizar" id="atualizar">
+        <label for="atualizar">Atualizar</label>
+      </div>
+
+      <!-- Formulário de escolha de tabela e chave primária da mesma-->
+
+      <div class="orcamento-dados forms">
+        <h2 class="font-1-m cor-12 coluna-2">Tabela</h2>
+        <div class="dropdown-container">
+          <input class="menu-drop " type="text" name="nome" id="nome" placeholder="Escolha uma tabela" readonly>
+          <div class="dropdown">
+            <ul class="font-1-m cor-12">
+              <li>Agência</li>
+              <li>Clientes</li>
+              <li>Conta</li>
+              <li>Funcionário</li>
+              <li>Transação</li>
+            </ul>
+          </div>
+        </div>
+        <h2 class="font-1-m cor-9 coluna-2">Chave Primária:</h2>
+        <div>
+          <input type="text" name="sobrenome" id="sobrenome" placeholder="Chave ">
+        </div>
+        <button class="botao coluna-2"> Atualizar dados </button>
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+
+      <div class="footer-contato">
+        <h3 class="font-2-l cor-0"> Contato </h3>
+        <ul class="font-1-m cor-5">
+          <li> <a href="tel:+552100000000">+55 21 0000-0000 </a> </li>
+          <li> <a href="mailto:contato@nullbank.com">contato@nullbank.com</a> </li>
+          <li> Estanislau Frota, 000</li>
+          <li> Sobral -Ce</li>
+        </ul>
+      </div>
+      <div class="footer-informacoes">
+        <h3 class="font-2-l cor-0"> Informações</h3>
+        <nav>
+          <ul class="font-1-m cor-5">
+            <li> <a href=""></a> Sobre Nós</li>
+            <li> <a href="">Termos e Condições</a> </li>
+            <li> <a href="">SAC</a> </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy font-2-m cor-6"> nullBANK- alguns direitos reservados<span class="cor-p1">.</span></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> nullBANK </title>
+  <meta name="description" content="Banco digital">
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,900&family=Poppins:wght@400;500&family=Roboto:ital,wght@0,400;600;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+
+<body id="login">
+
+  <!--CABEÇALHO -->
+
+  <header class="header-bg">
+    <div class="header container">
+
+      <h2 class="header-menu font-1-xxl cor-0"> nullBANK</h2>
+
+      <nav aria-label="primaria">
+        <ul class="header-menu font-2-m cor-0">
+          <li><a href="./index.html">DBA</a> </li>
+          <li><a href="./funcionarios.html">Fucionários</a> </li>
+          <li><a href="./cliente.html">Cliente</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+
+    <div class="titulo-bg">
+      <div class="titulo container">
+        <p class="font-2-l cor-5">conecte-se ao seu perfil profissional no nosso banco</p>
+        <h1 class="font-1-xxl  cor-0">página Gerente<span class="cor-p1">.</span></h1>
+      </div>
+    </div>
+
+    <form class="orcamento container" action="./">
+
+      <!-- INSERÇÃO DE DADOS REALIZAVEIS PELO CAIXA -->
+
+      <div class="login-dados forms  ">
+        <h2 class="font-1-m cor-12 coluna-2">Agência:</h2>
+        <div>
+          <input type="text" name="agencia" id="agencia" placeholder="Número da Agência ">
+        </div>
+        <h2 class="font-1-m cor-12 coluna-2">Tipo de conta:</h2>
+        <div>
+          <input type="text" name="tipo" id="tipo" placeholder="Tipo">
+        </div>
+        <h2 class="font-1-m cor-12 coluna-2">Transação:</h2>
+        <div>
+          <input type="text" name="numero-transacao" id="numero-transacao" placeholder="Número de Transação">
+        </div>
+      </div>
+
+      <!-- AÇÕES REALIZAVEIS PELO CAIXA -->
+
+      <div class="orcamento-produto">
+        <h2 class="font-1-m cor-2"> Ação</h2>
+        <input type="radio" name="tipo" value="gerente" id="gerente">
+        <label for="gerente"> <a href=""> Inserir dados </a></label>
+        <input type="radio" name="tipo" value="atendente" id="atendente">
+        <label for="atendente"> <a href=""> Ler dados </a></label>
+      </div>
+
+    </form>
+  </main>
+
+  <footer class="footer-bg">
+    <div class="footer container">
+
+      <div class="footer-contato">
+        <h3 class="font-2-l cor-0"> Contato </h3>
+        <ul class="font-1-m cor-5">
+          <li> <a href="tel:+552100000000">+55 21 0000-0000 </a> </li>
+          <li> <a href="mailto:contato@nullbank.com">contato@nullbank.com</a> </li>
+          <li> Estanislau Frota, 000</li>
+          <li> Sobral -Ce</li>
+        </ul>
+      </div>
+      <div class="footer-informacoes">
+        <h3 class="font-2-l cor-0"> Informações</h3>
+        <nav>
+          <ul class="font-1-m cor-5">
+            <li> <a href=""></a> Sobre Nós</li>
+            <li> <a href="">Termos e Condições</a> </li>
+            <li> <a href="">SAC</a> </li>
+          </ul>
+        </nav>
+      </div>
+      <p class="footer-copy font-2-m cor-6"> nullBANK- alguns direitos reservados<span class="cor-p1">.</span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

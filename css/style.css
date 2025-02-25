@@ -1,0 +1,16 @@
+/*IMPORTAÇÃO DOS ESTILOS DE CADA PÁGINA SERÃO "REQUISITADAS" NO ARQUIVO 'index.html'*/
+
+/*pg login dba*/
+@import "./login-bd/login-bd.css";
+
+/*componentes gerais e padrão do site*/
+@import "./utilidades/componentes.css";
+@import "./utilidades/formulario.css";
+@import "./utilidades/cores.css";
+@import "./utilidades/tipografia.css";
+@import "./global/header.css";
+@import "./global/footer.css";
+@import "./global/global.css";
+
+/*estilização de página clicável pelo usuário*/
+@import "./acoes/acoes-dba.css";
